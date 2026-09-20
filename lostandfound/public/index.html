@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Cards</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img src="LOST (1)-Photoroom.png" alt="logo" />
+      <div class="search-container">
+      <form action="">
+      <input id="authorSearch" type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa-search"></i></button>
+    </form>
+    </div>
+    </div>
+
+    <button class="addbtn"></button>
+
+    <div id="popup" class="modal">
+      <div class="modal-content">
+        <div class="form">
+          <button class="close"></button>
+          <label for="name">name</label>
+          <input type="text" id="name" placeholder="Enter Name" />
+          <label for="lc">location</label>
+          <input type="text" id="lc" placeholder="Enter location" />
+          <label for="image">image</label>
+          <input type="file" id="image" placeholder="Enter Image" />
+          <label class="ldesc" for="description">description</label>
+          <textarea id="description" placeholder="Enter Description"></textarea>
+
+          <button class="submit" onclick="submitForm()">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="cardContainer" class="cards"></div>
+     
+    <script src="script.js" ></script>
+  </body>
+</html>
